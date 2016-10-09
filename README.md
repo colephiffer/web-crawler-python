@@ -1,3 +1,2 @@
-# python-spider
 
-This is a very simple script to capature Wuxi's monthly housing price
+This repository stores some scripts used as web crawler
