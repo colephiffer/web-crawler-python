@@ -1,8 +1,9 @@
-## This script is used to capature Wuxi's average house price monthly from 房天下
+## This script is used to get Wuxi's average house price from 房天下.com
 ## The results are stored in an Excel file named House price, you need to create this file before
 
 import urllib.request
 import re
+## xlwt and xlrd are excel operation related libs, need to install before
 import xlwt
 import xlrd
 from xlutils.copy import copy
@@ -30,6 +31,7 @@ for item in items:
     print (item[0]+':'+item[1])
 ##print (items)
 
+## if xlwt and xlrd are not installed, please make below statements as comments
 month=str(item[0])
 avg_price=str(item[1])
 
